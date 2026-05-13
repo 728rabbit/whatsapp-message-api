@@ -2,4 +2,12 @@ curl -i -X POST `
   https://graph.facebook.com/v25.0/1029924883547465/messages `
   -H 'Authorization: Bearer EAANvM6WgDQ8BRWwYlABafvZAJa6GlQbtAi1cUtzy80ZAZCwNyiHxj519DYL1L7bBXC5fe4cXDVohF25NPOqBED8XzikUey62e10rPjaTZBVYmZAobbNSs5elMS6bQ2JtCZAfNhVIZACK7tTQBlBdtzPeOGVOP4ZBKMZC2GPJCOMpMZCiQXq6fBgxjl27cBy5aYlAZBZAMZB5ryZACPOnaOWvL3wE9NRM7fJ0An3b0n1nGySVU33SWrsFXdRLonshEQwiyXgl3MmLR0uCbSDv2IThgQZBQjrftOQ' `
   -H 'Content-Type: application/json' `
+  -d '{ \"messaging_product\": \"whatsapp\", \"to\": \"852xxx\", \"type\": \"template\", \"template\": { \"name\": \"hello_world\", \"language\": { \"code\": \"en_US\" } } }'
+
+
+
+curl -i -X POST `
+  https://graph.facebook.com/v25.0/1029924883547465/messages `
+  -H 'Authorization: Bearer EAANvM6WgDQ8BRWwYlABafvZAJa6GlQbtAi1cUtzy80ZAZCwNyiHxj519DYL1L7bBXC5fe4cXDVohF25NPOqBED8XzikUey62e10rPjaTZBVYmZAobbNSs5elMS6bQ2JtCZAfNhVIZACK7tTQBlBdtzPeOGVOP4ZBKMZC2GPJCOMpMZCiQXq6fBgxjl27cBy5aYlAZBZAMZB5ryZACPOnaOWvL3wE9NRM7fJ0An3b0n1nGySVU33SWrsFXdRLonshEQwiyXgl3MmLR0uCbSDv2IThgQZBQjrftOQ' `
+  -H 'Content-Type: application/json' `
   -d '{ \"messaging_product\": \"whatsapp\", \"to\": \"852xxx\", \"type\": \"text\", \"text\": { \"body\": \"this_is_hello_world\" } }'
